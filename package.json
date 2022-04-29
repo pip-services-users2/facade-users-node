@@ -1,0 +1,65 @@
+{
+    "name": "facade-users-node",
+    "version": "1.0.0",
+    "author": "Conceptual Vision Consulting LLC",
+    "description": "Facade operations for user management Pip.Services in Node.js / ES2017",
+    "contributors": [
+        {
+            "name": "Sergey Seroukhov",
+            "email": "seroukhov@gmail.com"
+        }
+    ],
+    "main": "./obj/src/index.js",
+    "typings": "./obj/src/index.d.ts",
+    "keywords": [
+        "pip.services",
+        "users",
+        "rest api",
+        "client facade"
+    ],
+    "noAnalyze": true,
+    "repository": {
+        "type": "git",
+        "url": "ssh://git@github.com:pip-services-users2/facade-users-node.git"
+    },
+    "license": "Commercial",
+    "engines": {
+        "node": ">=14.0.0"
+    },
+    "private": true,
+    "scripts": {
+        "start": "node app",
+        "test": "mocha -t 10000 -R spec -u tdd --recursive ./obj/test",
+        "benchmark": "matcha -R clean -I tdd ./benchmark/run.js"
+    },
+    "dependencies": {
+        "google-protobuf": "^3.20.1",
+        "client-accounts-node": "^1.0.*",
+        "client-activities-node": "^1.0.*",
+        "client-emailsettings-node": "^1.0.*",
+        "client-passwords-node": "^1.0.*",
+        "client-roles-node": "^1.0.*",
+        "client-sessions-node": "^1.0.*",
+        "client-smssettings-node": "^1.0.*",
+        "pip-services3-commons-nodex": "^1.0.*",
+        "pip-services3-components-nodex": "^1.4.*",
+        "pip-services3-container-nodex": "^1.0.*",
+        "pip-services3-rpc-nodex": "^1.2.*"
+    },
+    "devDependencies": {
+        "@types/chai": "*",
+        "@types/mocha": "*",
+        "@types/mongodb": "^2.1.38",
+        "@types/node": "*",
+        "chai": "*",
+        "mocha": "*",
+        "service-accounts-node": "^1.0.*",
+        "service-activities-node": "^1.0.*",
+        "service-emailsettings-node": "^1.0.*",
+        "service-passwords-node": "^1.0.*",
+        "service-roles-node": "^1.0.*",
+        "service-sessions-node": "^1.0.*",
+        "service-smssettings-node": "^1.0.*",
+        "restify": "^4.3.0"
+    }
+}
