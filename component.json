@@ -1,6 +1,6 @@
 {
     "name": "facade-users-node",
     "version": "1.0.0",
-    "registry": "pipdevs",
+    "registry": "pipservices",
     "build": 0
 }
